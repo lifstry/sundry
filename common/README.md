@@ -8,7 +8,7 @@
 
 
 ## 语言基础 
-- Python <font style="background:green;color:white;padding:2px;border-radius:5px"><b>Develop</b></font>
+- [Python](language/python/README.md) <font style="background:green;color:white;padding:2px;border-radius:5px"><b>Develop</b></font>
 - Golang
 - Java
 - Shell
@@ -25,7 +25,7 @@
 - Doris
 - ...
 ## 美术 
-- 素描 <font style="background:green;color:white;padding:2px;border-radius:5px"><b>Develop</b></font>
+- [素描](art/sketch/README.md) <font style="background:green;color:white;padding:2px;border-radius:5px"><b>Develop</b></font>
 ## AI
 - <font style="background:blue;color:white;padding:2px;border-radius:5px"><b>TODO</b></font>
 ## 数据结构与算法
