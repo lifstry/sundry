@@ -282,3 +282,133 @@ my_Dict.clear() # 清空字典
 new_dict = my_dict.copy() # 复制字典（非引用传递）
 new_dict_2 = dict(my_dict) # 复制字典（非引用传递）
 ```
+## If Else
+
+```python
+a = 1
+b = 20
+
+if b > a:
+    pass
+elif a == b:
+    pass
+else:
+    pass
+
+if a > b: print("同一行简写if")
+print("fit case if") if a > b else print("fit case else")
+print(">") if a > b else print("=") if a == b else print("<")
+if True:
+    pass
+if b > a or ( b >= 20 and b == 1 ):
+    pass
+```
+
+## While
+
+Python拥有两个原始的循环命令
+- `while`
+- `for`
+
+```python
+i = 1
+while i < 7:
+    print(i)
+    i += 1
+
+while True:
+    i += 1
+    print(i)
+    if i % 3 == 0:
+        continue
+    if i > 100:
+        break
+
+a = 1
+while a <= 100:
+    print(a)
+    a += 1 
+else:
+    # else不会在break的情况下执行，只会在while判断自然不满足时执行
+    print("i is greater than 100 now")
+```
+
+## For
+> `for`主要用于迭代序列(列表、元组、集合、字典、字符串等)
+
+和其他编程语言中的`for`关键字不太相似，python中的`for`更像是其他面向对象语言中的迭代器方法。
+
+```python
+for item in ["apple", "banana", "cherry"]:
+    pass
+for char in "Hello World":
+    pass
+for item in ["apple", "banana", "cherry"]:
+    if item == "apple":
+        continue
+    if item == "banana":
+        break
+
+for i in range(10): # range 默认从0开始,截止指定值（不包含）
+    print(i) # 此处打印0到9的值
+
+for x in range(3, 50, 6): # [3, 50) 步长为6
+  print(x) # 此处打印 3，9，15，21，27，33，39，45
+else:
+    print("Happy Ending")
+
+```
+
+## 函数
+> 函数是一种仅会在调用时运行的代码块。
+
+```python
+def my_func(param_1 = "p_value"):
+    print("this is my_func execute. param_1={}".format(param_1))
+
+my_func() # 调用函数
+my_func("spec_value") 
+
+
+from typing import Tuple
+def my_func2(id: int, *args, **kwargs) -> Tuple[int,str]:
+    return 0, "success"
+
+my_fun2(1, "a","b","c",d="hello",e="world")
+my_fun2(1, *("a","b","c"), **{"a":1, "b":2})
+
+# 递归函数
+def tri_recursion(k):
+  if(k>0):
+    result = k+tri_recursion(k-1)
+    return result
+  else:
+    return 0
+  return result
+print(tri_recursion(6))
+
+```
+
+## Lambda
+> lambda函数是一种小的匿名函数。<br>
+> lambda函数可以接受任意数量的参数，但只能有一个表达式。
+
+`lambda arguments : expression`
+
+```python
+x = lambda a, b : a * b + 10
+print(x(5, 6))
+
+def my_func(n):
+    return lambda a : a * n
+print(my_func(2)(13))
+print(my_func(3)(13))
+
+```
+
+## 数组
+> python没有内置对数组的支持，但是可以使用列表`list`代替。
+
+## 类和对象
+TODO
+
