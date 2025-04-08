@@ -4,7 +4,7 @@
 ## 经典类和新式类
 
 
-> A "Classic Class" or "old-style class" is a class as it existed in Python 2.1 and before. They have been retained for backwards compatibility. This page attempts to list the differences. - [NewClass Vs lassicClass](https://wiki.python.org/moin/NewClassVsClassicClass)
+> A "Classic Class" or "old-style class" is a class as it existed in Python 2.1 and before. They have been retained for backwards compatibility. This page attempts to list the differences. - [NewClass Vs classicClass](https://wiki.python.org/moin/NewClassVsClassicClass)
 
 Python 2.2版本引入了新式类概念。
 
@@ -74,6 +74,6 @@ class A(object):
 class B(A):
     def __init__(self):
         super().__init__() # Python3.x
-        # super(A, self).__init__() # Python2.x
+        # super(B, self).__init__() # Python2.x
 ```
 

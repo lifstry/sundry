@@ -410,5 +410,48 @@ print(my_func(3)(13))
 > python没有内置对数组的支持，但是可以使用列表`list`代替。
 
 ## 类和对象
-TODO
+> Python是一种面向对象的编程语言。<br>
+> Python中几乎所有东西都是对象，拥有属性和方法。<br>
+
+类(Class)类似对象构造函数，或者是用于创建对象的“蓝图”。
+```python
+class MyClass:
+    a = 5
+
+# 创建对象
+obj = MyClass()
+print(obj)
+```
+
+**__init__()函数**
+
+所有类都有一个`__init__()`函数，它始终在启动类时执行。
+```python
+class Person:
+    def __init__(self, name,age):
+        self.name = name
+        self.age = age
+    
+    # 对象方法
+    # self参数是对类的当前实例的引用，用于访问属于该类的变量。
+    # 不比被命名为self，但是必须是类中函数的首个参数。
+    def say(self):
+        print(f"Hi,My name is {self.name},I'm {self.age} years old")
+
+person = Person("leo",18)
+print(person.name)
+print(person.age)
+
+```
+*每次使用类创建对象时，都会自动调用`__init__()`函数。*
+
+
+
+## Python继承
+
+`继承`允许我们定义继承另一个类的所有方法和属性的类。
+
+`父类`是被继承的类，也称为`基类`，`子类`也称为`派生类`。
+
+
 
